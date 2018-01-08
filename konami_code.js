@@ -6,9 +6,12 @@ function init() {
   // Write your JavaScript code inside the init() function
   const kon = document.querySelector('body');
   kon.addEventListener('keydown', function(e){
+      if(e.which == 38){
+        index.push(e.which);
+        alert('crim');
+      }
 
 
-      index.push(e.which);
 
 
       if(index.length == code.length){
